@@ -53,7 +53,7 @@ class UsuarioDAO:
             return cursor.rowcount
 
 if __name__ == '__main__':
-    #Eliminar usuario
+# Eliminar usuario
 
 #    usuario = Usuario(id_usuario=4)
 #    usuario_eliminado = UsuarioDAO.eliminar(usuario)
@@ -69,10 +69,10 @@ if __name__ == '__main__':
   #  usuario_insertado = UsuarioDAO.insertar(usuario)
    # log.debug(f'Usuario insertado: {usuario_insertado}')
 
-    #Listar o seleccionar
-    usuarios = UsuarioDAO.seleccionar()
-    for usuario in usuarios:
-       log.debug(usuario)
+#    #Listar o seleccionar
+#    usuarios = UsuarioDAO.seleccionar()
+#    for usuario in usuarios:
+#       log.debug(usuario)
 
 
 
