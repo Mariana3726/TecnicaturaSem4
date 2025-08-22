@@ -511,3 +511,19 @@ DETAIL:  Key (id_usuario)=(2) already exists.
 11:59:16 PM:DEBUG [cursor_del_pool.py:27] Commit de la transacción
 11:59:16 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x0000015E7B60A460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 11:59:16 PM:DEBUG [usuario_dao.py:70] Usuario insertado: 1
+06:49:41 PM:DEBUG [cursor_del_pool.py:13] Inicio del método with y __enter__
+06:49:41 PM:DEBUG [conexion.py:36] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000245D00B5D60>
+06:49:41 PM:DEBUG [conexion.py:18] Conexión obtenida del pool: <connection object at 0x00000245D004E460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:49:41 PM:DEBUG [usuario_dao.py:50] Usuario a eliminar: Usuario: 3 None None
+06:49:41 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el método exit
+06:49:41 PM:DEBUG [cursor_del_pool.py:27] Commit de la transacción
+06:49:41 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x00000245D004E460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:49:41 PM:DEBUG [usuario_dao.py:60] Usuario eliminado: 0
+06:50:26 PM:DEBUG [cursor_del_pool.py:13] Inicio del método with y __enter__
+06:50:26 PM:DEBUG [conexion.py:36] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001540C0B5D60>
+06:50:26 PM:DEBUG [conexion.py:18] Conexión obtenida del pool: <connection object at 0x000001540C04E460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:50:26 PM:DEBUG [usuario_dao.py:50] Usuario a eliminar: Usuario: 4 None None
+06:50:26 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el método exit
+06:50:26 PM:DEBUG [cursor_del_pool.py:27] Commit de la transacción
+06:50:26 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x000001540C04E460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:50:26 PM:DEBUG [usuario_dao.py:60] Usuario eliminado: 1
