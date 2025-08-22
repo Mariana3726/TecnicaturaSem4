@@ -551,3 +551,16 @@ DETAIL:  Key (id_usuario)=(2) already exists.
 06:54:48 PM:DEBUG [cursor_del_pool.py:27] Commit de la transacción
 06:54:48 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x0000020479B7A460; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 06:54:48 PM:DEBUG [usuario_dao.py:65] Usuario modificcado: 1
+06:56:24 PM:DEBUG [cursor_del_pool.py:13] Inicio del método with y __enter__
+06:56:24 PM:DEBUG [conexion.py:36] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000019AC0449E80>
+06:56:24 PM:DEBUG [conexion.py:18] Conexión obtenida del pool: <connection object at 0x0000019AC1F8E350; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:56:24 PM:DEBUG [usuario_dao.py:21] Seleccionando usuarios
+06:56:24 PM:DEBUG [cursor_del_pool.py:21] Se ejecuta el método exit
+06:56:24 PM:DEBUG [cursor_del_pool.py:27] Commit de la transacción
+06:56:24 PM:DEBUG [conexion.py:47] Regresamos la conexion del pool: <connection object at 0x0000019AC1F8E350; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 1 Natalia 745
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 5 Mariana 746
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 6 Jonatan 269
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 7 Pablo 748
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 8 Leticia 749
+06:56:24 PM:DEBUG [usuario_dao.py:75] Usuario: 9 Daniel 751

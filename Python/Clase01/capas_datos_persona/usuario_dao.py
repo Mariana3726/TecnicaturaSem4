@@ -60,9 +60,9 @@ if __name__ == '__main__':
 #    log.debug(f'Usuario eliminado: {usuario_eliminado}')
 
     #Actualizar usuario
-    usuario = Usuario(id_usuario=6, username='Jonatan', password='269')
-    usuario_modificado = UsuarioDAO.actualizar(usuario)
-    log.debug(f'Usuario modificcado: {usuario_modificado}')
+#    usuario = Usuario(id_usuario=6, username='Jonatan', password='269')
+#    usuario_modificado = UsuarioDAO.actualizar(usuario)
+#    log.debug(f'Usuario modificcado: {usuario_modificado}')
 
 #   #Insertar usuario
  #   usuario = Usuario(username='Daniel', password='751')
@@ -70,9 +70,9 @@ if __name__ == '__main__':
    # log.debug(f'Usuario insertado: {usuario_insertado}')
 
     #Listar o seleccionar
-#    usuarios = UsuarioDAO.seleccionar()
-#    for usuario in usuarios:
-#       log.debug(usuario)
+    usuarios = UsuarioDAO.seleccionar()
+    for usuario in usuarios:
+       log.debug(usuario)
 
 
 
