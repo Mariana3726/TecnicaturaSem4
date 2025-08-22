@@ -10,7 +10,7 @@ class UsuarioDAO:
     # Sentencias SQL predefinidas para las operaciones CRUD
 
     _SELECT = 'SELECT * FROM usuario ORDER BY id_usuario'
-    _INSERTAR = 'INSERT INTO usuario(username, password) VALUE (%s, %s)'
+    _INSERTAR = 'INSERT INTO usuario(username, password) VALUES (%s, %s)'
     _ACTUALIZAR = 'UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s'
     _ELIMINAR = 'DELETE FROM usuario WHERE id_usuario=%s'
 
@@ -52,7 +52,27 @@ class UsuarioDAO:
             cursor.execute(cls._ELIMINAR, valores)
             return cursor.rowcount
 
+if __name__ == '__main__':
+    #Eliminar usuario
 
+#    usuario = Usuario(id_usuario=3)
+#    usuario_eliminado = UsuarioDAO.eliminar(usuario)
+#    log.debug(f'Usuario eliminado: {usuario_eliminado}')
+
+    #Actualizar usuario
+#    usuario = Usuario(id_usuario=1, username='', password='369')
+#    usuario_modificado = UsuarioDAO.actualizar(usuario)
+#    log.debug(f'Usuario modificcado: {usuario_modificado}')
+
+    #Insertar usuario
+    usuario = Usuario(username='Daniel', password='751')
+    usuario_insertado = UsuarioDAO.insertar(usuario)
+    log.debug(f'Usuario insertado: {usuario_insertado}')
+
+    #Listar o seleccionar
+#    usuarios = UsuarioDAO.seleccionar()
+#    for usuario in usuarios:
+#       log.debug(usuario)
 
 
 
