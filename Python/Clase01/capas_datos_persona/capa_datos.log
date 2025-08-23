@@ -579,3 +579,19 @@ DETAIL:  Key (id_usuario)=(2) already exists.
 10:59:36 PM:INFO [menu_app_usuario.py:16] Usuario: 9 Daniel 751
 11:00:08 PM:INFO [menu_app_usuario.py:19] Salimos de la app, adios!
 11:01:24 PM:INFO [menu_app_usuario.py:19] Salimos de la app, adios!
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 1 Natalia 745
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 5 Mariana 746
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 6 Jonatan 269
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 7 Pablo 748
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 8 Leticia 749
+11:01:41 PM:INFO [menu_app_usuario.py:16] Usuario: 9 Daniel 751
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 1 Natalia 745
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 5 Mariana 746
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 6 Jonatan 269
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 7 Pablo 748
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 8 Leticia 749
+11:43:39 PM:INFO [menu_app_usuario.py:17] Usuario: 9 Daniel 751
+11:44:12 PM:INFO [menu_app_usuario.py:23] Usuario insertado: 1
+11:45:08 PM:INFO [menu_app_usuario.py:30] Usuario actualizado: 1
+11:45:57 PM:INFO [menu_app_usuario.py:35] Usuario eliminado: 1
+11:46:29 PM:INFO [menu_app_usuario.py:37] Salimos de la app, adios!

@@ -2,7 +2,7 @@ import logging as log  # Importamos el módulo 'logging' y lo renombramos como '
 
 # Llamamos una configuración básica del logging
 
-log.basicConfig(level = log.INFO,
+log.basicConfig(level = log.INFO, #debug muestra mas info, info menos
                 format = '%(asctime)s:%(levelname)s [%(filename)s:%(lineno)s] %(message)s',
                 datefmt='%I:%M:%S %p',
                 handlers=[
