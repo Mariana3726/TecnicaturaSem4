@@ -4,9 +4,9 @@ const cart = []; //este es el carrito, un array vacío
 productos.forEach((product) =>{ // con el forEach recorremos cada producto del array y lo guardamos en la variable product
     const content = document.createElement("div"); //creamos el elemento vacío
     content.innerHTML =  ` 
-    <img src="${product.img}">
-    <h3>${product.productName}</h3>
-    <p>${product.price} $</p>
+        <img src="${product.img}">
+        <h3>${product.productName}</h3>
+        <p>${product.price} $</p>
      ` ;
     shopContent.append(content);
 
@@ -16,7 +16,7 @@ productos.forEach((product) =>{ // con el forEach recorremos cada producto del a
     content.append(buyButton);
 
     buyButton.addEventListener("click", ()=>{ //agregamos evento
-        CaretPosition.push({
+        cart.push({
             id: product.id,
             productName: product.productName,
             price: product.price,
