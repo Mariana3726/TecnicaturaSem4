@@ -1,103 +1,102 @@
-/* ========= Reset básico ========= */
 * {
-  margin: 0;
+  margin: 0; /*eliminamos márgenes y paddings por defecto*/
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========= Tipografía y fondo general ========= */
+/*tipografía y fondo */
 body {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a, #1e40af);
-  color: #f9fafb;
-  min-height: 100vh;
-  display: flex;
+  font-family: "Trebuchet MS", Arial, sans-serif; /*tipografia principal*/
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #1e40af); /*fondo*/
+  color: #f9fafb; /*texto claro*/
+  min-height: 100vh; /*altura mínima(alto de lka pantalla*/
+  display: flex; /*flexbox*/
   flex-direction: column; /* Flexbox */
   align-items: center;   /* centra horizontal */
   padding: 20px;
 }
 
-/* ========= h1 con color y background ========= */
+/*h1 con color y background */
 h1 {
-  font-size: 3rem;
+  font-size: 3rem; /*tamaño grande*/
   background: #fbbf24; /* amarillo */
   color: #111827;      /* gris oscuro */
-  padding: 15px 25px;
-  border-radius: 12px;
-  text-align: center;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 15px 25px;  /* Espaciado alrededor del texto */
+  border-radius: 12px;  /* Bordes redondeados */
+  text-align: center;   /* Centrado de texto */
+  margin-bottom: 20px;    /* Separación inferior */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);   /* Sombra */
 }
 
-/* ========= Layout de secciones ========= */
+/* Layout de secciones*/
 section {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);  /* Fondo semitransparente */
+  border-radius: 12px;  /* Bordes redondeados */
+  padding: 20px;   /* Espaciado interno */
   margin: 15px 0;
   width: 90%;
   max-width: 800px;
-  display: flex;
+  display: flex;  /* Flexbox */
   flex-direction: column; /* Flexbox dentro de cada sección */
-  align-items: center;
-  text-align: center;
+  align-items: center;  /* Centrados horizontalmente */
+  text-align: center;   /* Texto centrado */
 }
 
-/* ========= Títulos secundarios ========= */
+/* Títulos secundarios */
 h2, h4 {
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Espaciado inferior */
   font-weight: bold;
   color: #38bdf8; /* celeste */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* ========= Botones ========= */
+/* Botones */
 button {
   padding: 10px 20px;
   margin: 8px;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  cursor: pointer;
+  cursor: pointer; /* Cursor de mano al pasar */
   font-weight: bold;
-  transition: transform 0.2s ease, background 0.3s ease;
+  transition: transform 0.2s ease, background 0.3s ease; 
 }
 
 button:hover {
   transform: scale(1.1);
 }
-
+/* Colores de botones según su función */
 #boton-reglas, #boton-jugar, #boton-personaje {
-  background: #22c55e;
-  color: white;
+  background: #22c55e;  /*verde*/
+  color: white;  
 }
 
 #boton-punio {
-  background: #f87171;
+  background: #f87171; /* Rojo */
   color: white;
 }
 
 #boton-patada {
-  background: #facc15;
-  color: #111;
+  background: #facc15; /* Amarillo */
+  color: #111; /* Texto oscuro para contraste */
 }
 
 #boton-barrida {
-  background: #60a5fa;
+  background: #60a5fa; /*celeste*/
   color: white;
 }
 
 #boton-reiniciar {
-  background: #9333ea;
+  background: #9333ea;  /* Violeta */
   color: white;
 }
 
-/* ========= Inputs ========= */
+/* Inputs */
 label {
-  margin: 0 10px;
-  cursor: pointer;
-  font-weight: bold;
+  margin: 0 10px; /* Separación entre labels */
+  cursor: pointer;  /* Cursor de mano */
+  font-weight: bold; /* Negrita */
 }
 
 input[type="radio"] {
@@ -105,33 +104,33 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-/* ========= Mensajes ========= */
+/* Mensajes */
 #mensajes p {
-  margin: 8px 0;
-  padding: 10px;
-  background: rgba(0,0,0,0.4);
-  border-radius: 6px;
-  font-size: 1rem;
-  max-width: 600px;
+  margin: 8px 0;   /* Separación entre párrafos */
+  padding: 10px; /* Espaciado interno */
+  background: rgba(0,0,0,0.4);     /* Fondo oscuro translúcido */
+  border-radius: 6px;  /* Bordes redondeados */
+  font-size: 1rem;  /* Tamaño de fuente */
+  max-width: 600px;  /* Ancho máximo */
 }
-
+/* El último mensaje se resalta */
 #mensajes p:last-child {
   font-weight: bold;
-  color: #facc15;
+  color: #facc15; /*amarillo*/
 }
 
-/* ========= Responsive ========= */
+/* Responsive*/
 @media (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2rem;  /* Más chico */
     padding: 10px;
   }
   section {
     padding: 15px;
-    width: 100%;
+    width: 100%;  /* Ocupa todo el ancho */
   }
   button {
-    width: 100%;
+    width: 100%;  /* Botones a lo ancho */
     margin: 5px 0;
   }
 }
