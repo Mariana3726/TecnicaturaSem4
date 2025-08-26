@@ -29,15 +29,28 @@ body {
 }
 /*h1 con color y background */
 h1 {
-  font-size: 3rem; /*tamaño grande*/
-  background: #fbbf24; /* amarillo */
-  color: #111827;      /* gris oscuro */
-  padding: 15px 25px;  /* Espaciado alrededor del texto */
-  border-radius: 12px;  /* Bordes redondeados */
-  text-align: center;   /* Centrado de texto */
-  margin-bottom: 20px;    /* Separación inferior */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);   /* Sombra */
+  font-size: 2.5rem; 
+  background: linear-gradient(135deg, #164d9e, #1e40af); /* gradiente azul */
+  color: #f9fafb;      /* texto claro para contraste */
+  padding: 15px 25px;  
+  border-radius: 16px;  /* bordes más redondeados */
+  text-align: center;   
+  margin-bottom: 20px;    
+  
+  /* sombra suave y difusa */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  
+  /* transición para hover */
+  backdrop-filter: brightness(1.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
+h1:hover {
+  transform: translateY(-5px); /* se eleva al pasar el mouse */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  background: linear-gradient(135deg, #1e40af, #164d9e); /* cambia el gradiente */
+}
+
 
 /* Layout de secciones*/
 section {
@@ -67,11 +80,32 @@ button {
   padding: 10px 20px;
   margin: 8px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1rem;
   cursor: pointer; /* Cursor de mano al pasar */
   font-weight: bold;
-  transition: transform 0.2s ease, background 0.3s ease; 
+  transition: all 0.3s ease;  /*transicion mas suave*/
+
+  /*sombra sutil*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+
+  /* Degradado ligero */
+  background: linear-gradient(145deg, #22c55e, #16a34a);
+  color: white;
+}
+
+/* Hover más “suave” */
+button:hover {
+  transform: translateY(-3px); /* Levanta el botón ligeramente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra más marcada */
+  background: linear-gradient(145deg, #16a34a, #22c55e); /* Cambia sutilmente */
+}
+
+/* Opcional: efecto “presionar” */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
@@ -79,28 +113,55 @@ button:hover {
 }
 /* Colores de botones según su función */
 #boton-reglas, #boton-jugar, #boton-personaje {
-  background: #22c55e;  /*verde*/
+  background: #178b42;  /*verde*/
   color: white;  
 }
 
 #boton-punio {
-  background: #f87171; /* Rojo */
+  background: linear-gradient(135deg, #530909, #b91c1c); /* gradiente rojo */
   color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#boton-punio:hover {
+  background: linear-gradient(135deg, #b91c1c, #7a1f1f);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
 }
 
 #boton-patada {
-  background: #facc15; /* Amarillo */
-  color: #111; /* Texto oscuro para contraste */
+    background: linear-gradient(135deg, #886e07, #eab308);
+    color: #111; 
+}
+
+#boton-patada:hover {
+  background: linear-gradient(135deg, #eab308, #746011);
+  transform: translateY(-3px);
 }
 
 #boton-barrida {
-  background: #60a5fa; /*celeste*/
+  background: linear-gradient(135deg, #3568a7, #60a5fa);
   color: white;
 }
 
+#boton-barrida:hover {
+  background: linear-gradient(135deg, #60a5fa, #3568a7);
+  transform: translateY(-3px);
+}
+
 #boton-reiniciar {
-  background: #9333ea;  /* Violeta */
-  color: white;
+   background: linear-gradient(135deg, #9333ea, #a855f7);
+   color: white;
+}
+
+#boton-reiniciar:hover {
+  background: linear-gradient(135deg, #a855f7, #9333ea);
+  transform: translateY(-3px);
 }
 
 /* Inputs */
