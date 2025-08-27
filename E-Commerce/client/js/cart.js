@@ -30,7 +30,7 @@ const displayCart = () => {
     //modal body
     cart.forEach((product) => {
         const modalBody = document.createElement("div");
-        modalBody.className = "modal-body"
+        modalBody.className = "modal-body";
         modalBody.innerHTML = `
         <div class="product">
            <img class="product-img" src="${product.img}" />
@@ -48,6 +48,14 @@ const displayCart = () => {
         `;
         modalContainer.append(modalBody);
     });
+
+    //modal footer
+    const modalFooter = document.createElement("div");
+    modalFooter.className = "modal-footer";
+    modalFooter.innerHTML = `
+    <div class="total-price">Total</div>
+    `;
+    modalContainer.append(modalFooter);
 };
 
 cartBtn.addEventListener("click", displayCart);
