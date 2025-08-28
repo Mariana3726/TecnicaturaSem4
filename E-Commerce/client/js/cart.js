@@ -38,15 +38,30 @@ const displayCart = () => {
             <h4>${product.productName}</h4>
         </div>
         <div class="quantity">
-            <span class="quantity-btn-decrese">-</span>
+            <span class="quantity-btn-decrese"> - </span>
             <span class="quantity-input">${product.quanty}</span>
-            <span class="quantity-btn-increse">+</span>
+            <span class="quantity-btn-increse"> + </span>
         </div>
             <div class="price">${product.price * product.quanty} $</div>
             <div class="delete-product">❌</div>
         </div>
         `;
         modalContainer.append(modalBody);
+
+        const decrese = modalBody.querySelector(".quantity-btn-decrese") //para restar productos del carrito
+        decrese.addEventListener("click", () => {
+            if(product.quanty !== 1){
+            product.quanty--;
+            displayCart();
+            }
+        });
+
+        const increse = modalBody.querySelector(".quantity-btn-increse"); //para sumar productos al carrito
+        increse.addEventListener("click", () => {
+            product.quanty++;
+            displayCart();
+        })
+
     });
 
     //modal footer
