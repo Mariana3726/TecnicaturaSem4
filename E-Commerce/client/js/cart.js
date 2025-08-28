@@ -60,19 +60,33 @@ const displayCart = () => {
         increse.addEventListener("click", () => {
             product.quanty++;
             displayCart();
+        });
+
+        //botón de eliminar
+        const deleteProduct = modalBody.querySelector(".delete-product");
+        deleteProduct.addEventListener("click", ()=> {
+            deleteCartProduct(product.id)
         })
 
     });
 
     //modal footer
-    const total = cart.reduce((acc, elem) => acc + elem.price * elem.quanty, 0)
+    const total = cart.reduce((acc, elem) => acc + elem.price * elem.quanty, 0) //total de la compra
 
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
-    <div class="total-price">${total}</div>
+    <div class="total-price"> Total: ${total}</div> 
     `;
     modalContainer.append(modalFooter);
 };
 
 cartBtn.addEventListener("click", displayCart);
+
+const deleteCartProduct = (id) => {
+    const foundId = cart.findIndex((element)=> element.id === id);
+    if (foundId !== -1){
+        cart.splice(foundId, 1); //elimina el producto
+    }
+    displayCart(); //vuelve a renderizar el carrito
+};
