@@ -48,7 +48,11 @@ valor = {'Nombre': 'Juan', 'Apellido': 'Perez'}
 resultado = bool(valor)
 print(f'valor diccionario con elementos: {valor}, Resultado: {resultado}')
 
-
+# Sentencias de control
+if '':
+    print('Regresa verdadero')
+else:
+    print('Regresa falso')
 
 
 
