@@ -54,6 +54,14 @@ if '':
 else:
     print('Regresa falso')
 
+#Ciclos
+
+variable = 3
+while variable:
+    print('Regresa verdadero')
+    break
+else:
+    print('Regresa falso')
 
 
 
