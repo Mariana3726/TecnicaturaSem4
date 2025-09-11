@@ -53,8 +53,18 @@ public class EstudiantesApplication implements CommandLineRunner {
 	}
 
 	private boolean ejecutarOpciones(Scanner consola) {
-		var opcion = Integer.parseInt(consola.nextLine());
-		var salir = false;
+		//var opcion = Integer.parseInt(consola.nextLine());
+		//var salir = false;
+
+		boolean salir = false;
+		int opcion;
+
+		try {
+			opcion = Integer.parseInt(consola.nextLine()); // intenta convertir
+		} catch (NumberFormatException e) {
+			logger.info("Por favor ingrese un número válido del 1 al 6." + nl);
+			return false; // vuelve al menú sin romper el programa
+		}
 
 		switch (opcion) {
 			case 1 -> { // Listar estudiantes
