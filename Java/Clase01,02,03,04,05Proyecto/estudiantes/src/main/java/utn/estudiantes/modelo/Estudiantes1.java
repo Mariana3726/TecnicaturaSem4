@@ -15,7 +15,7 @@ public class Estudiantes1 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_estudiantes")   // coincide con la columna de la DB
+    @Column(name = "id_estudiante")   // coincide con la columna de la DB
     private Integer idEstudiante;
 
     private String nombre;
